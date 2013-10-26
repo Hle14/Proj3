@@ -1,3 +1,4 @@
+/*
 #include <opencv2\core\core.hpp>
 #include <opencv2\highgui\highgui.hpp>
 #include <opencv2\nonfree\nonfree.hpp>
@@ -50,7 +51,7 @@ int main(int argc,char* argv[])
 	namedWindow("window",1);
 	imshow("window",edges);
 
-	waitKey(0);
+	
 	//write result image to new file with c_ prefix on original filename
 	string output_name(argc==4 ? argv[3]:argv[5]);
 	output_name.insert(0,"c_");
@@ -58,5 +59,8 @@ int main(int argc,char* argv[])
 	printf("\n%s",out_name);
 	imwrite(out_name,edges);
 	
+	waitKey(0);
+
 	return 0;
 }
+*/
